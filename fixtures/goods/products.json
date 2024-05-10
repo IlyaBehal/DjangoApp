@@ -6,10 +6,10 @@
             "name": "Чайний столик і три стільця",
             "slug": "chajnij-stolik-i-tri-stilcya",
             "description": "Комплект із трьох стільців і дизайнерський столик для вітальної кімнати.",
-            "image": "",
+            "image": "goods_images/set_of_tea_table_and_three_chairs.jpg",
             "price": "150.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 10,
             "category": 7
         }
     },
@@ -20,10 +20,10 @@
             "name": "Чайний столик и два стільця",
             "slug": "chajnij-stolik-i-dva-stilcya",
             "description": "Набір із стола і двох стільців в мінімалістичному стилі.",
-            "image": "",
+            "image": "goods_images/set_of_tea_table_and_two_chairs.jpg",
             "price": "93.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 11,
             "category": 10
         }
     },
@@ -34,10 +34,10 @@
             "name": "Двоспальне ліжко",
             "slug": "dvospalne-lizhko",
             "description": "Ліжко двоспальне з наголовником і взагалі дуже ортопедичне.",
-            "image": "",
+            "image": "goods_images/double_bed.jpg",
             "price": "670.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "6.00",
+            "quantity": 7,
             "category": 6
         }
     },
@@ -48,10 +48,10 @@
             "name": "Кухонний стіл з раковиною",
             "slug": "kuhonnij-stil-s-rakovinoyu",
             "description": "Кухонний стіл для обіду з вмонтованою раковиною і стільцями.",
-            "image": "",
+            "image": "goods_images/kitchen_table_2.jpg",
             "price": "365.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 5,
             "category": 5
         }
     },
@@ -62,10 +62,10 @@
             "name": "Кухонний стіл із вбудовою",
             "slug": "kuhonnij-stil-iz-vbudovoyu",
             "description": "Кухонний стіл із вбудованою плитою та раковиною. Багато полиць та взагалі гарний.",
-            "image": "",
+            "image": "goods_images/kitchen_table.jpg",
             "price": "430.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "30.00",
+            "quantity": 4,
             "category": 5
         }
     },
@@ -76,10 +76,10 @@
             "name": "Кутовий диван для вітальні",
             "slug": "kutovij-divan-dlya-vitalni",
             "description": "Кутовий диван, розкладається в двоспальне ліжко, для вітальні та прийому гостей саме те!",
-            "image": "",
+            "image": "goods_images/corner_sofa.jpg",
             "price": "610.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "5.00",
+            "quantity": 3,
             "category": 7
         }
     },
@@ -90,10 +90,10 @@
             "name": "Приліжковий столик",
             "slug": "prilizhkovij-stolik",
             "description": "Приліжковий столик із двома висувними ящиками (квітка не входить у комплект).",
-            "image": "",
+            "image": "goods_images/bedside_table.jpg",
             "price": "55.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 21,
             "category": 6
         }
     },
@@ -104,10 +104,10 @@
             "name": "Диван звичайний",
             "slug": "divan-zvichajnij",
             "description": "Диван, він же софа звичайна, нічого примітного опису.",
-            "image": "",
+            "image": "goods_images/sofa.jpg",
             "price": "190.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 7,
             "category": 9
         }
     },
@@ -118,10 +118,10 @@
             "name": "Стілець офісний",
             "slug": "stilec-ofisnij",
             "description": "Опис товару, про те який він класний, але це стілець, що тут сказати...",
-            "image": "",
+            "image": "goods_images/office_chair.jpg",
             "price": "30.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "25.00",
+            "quantity": 14,
             "category": 8
         }
     },
@@ -132,10 +132,10 @@
             "name": "Рослина",
             "slug": "roslina",
             "description": "Рослина для прикраси вашого інтер'єру подарує свіжість та безтурботність обстановці.",
-            "image": "",
+            "image": "goods_images/plants.jpg",
             "price": "10.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "7.00",
+            "quantity": 44,
             "category": 10
         }
     },
@@ -146,10 +146,10 @@
             "name": "Квітка стилізована",
             "slug": "kvitka-stilizovana",
             "description": "Дизайнерська квітка (можливо штучна) для прикраси інтер'єру.",
-            "image": "",
+            "image": "goods_images/flower.jpg",
             "price": "15.00",
             "discount": "0.00",
-            "quantity": 0,
+            "quantity": 3,
             "category": 10
         }
     },
@@ -160,10 +160,10 @@
             "name": "Приліжковий столик 2",
             "slug": "prilizhkovij-stolik-2",
             "description": "Столик досить дивний на вигляд, але підходить для розміщення поряд з ліжком.",
-            "image": "",
+            "image": "goods_images/strange_table.jpg",
             "price": "25.00",
-            "discount": "0.00",
-            "quantity": 0,
+            "discount": "10.00",
+            "quantity": 11,
             "category": 6
         }
     }
