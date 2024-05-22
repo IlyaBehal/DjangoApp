@@ -1,10 +1,12 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth, messages
+from django.db.models import Prefetch
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import reverse
 
 from carts.models import Cart
+from orders.models import Order, OrderItem
 from users.forms import ProfileForm, UserLoginForm, UserRegisterForm
 
 
@@ -33,7 +35,7 @@ def login(request):
     else:
         form = UserLoginForm()
 
-    context = {"title": "SNEAKER - Увійти", "form": form}
+    context = {"title": "Home - Увійти", "form": form}
     return render(request, "users/login.html", context)
 
 
@@ -62,7 +64,7 @@ def registration(request):
     else:
         form = UserRegisterForm()
 
-    context = {"title": "SNEAKER - Реєстрація", "form": form}
+    context = {"title": "Home - Реєстрація", "form": form}
 
     return render(request, "users/registration.html", context)
 
@@ -80,7 +82,17 @@ def profile(request):
     else:
         form = ProfileForm(instance=request.user)
 
-    context = {"title": "SNEAKER - Профіль", "form": form}
+    orders = (
+        Order.objects.filter(user=request.user)
+            .prefetch_related(
+                Prefetch(
+                    "orderitem_set", 
+                    queryset=OrderItem.objects.select_related("product"),
+                )
+            )
+            .order_by("-id")
+        )
+    context = {"title": "Home - Профіль", "form": form, "orders": orders}
     return render(request, "users/profile.html", context)
 
 

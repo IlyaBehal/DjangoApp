@@ -2,12 +2,12 @@ from django.contrib import messages
 from django.db import transaction
 from django.forms import ValidationError
 from django.shortcuts import redirect, render
-
+from django.contrib.auth.decorators import login_required
 from carts.models import Cart
 from orders.forms import CreateOrderFrom
 from orders.models import Order, OrderItem
 
-
+@login_required
 def create_order(request):
     if request.method == "POST":
         form = CreateOrderFrom(data=request.POST)
@@ -65,7 +65,8 @@ def create_order(request):
 
     context = {
         "form": form, 
-        "title": "Sneaker - Оформлення замовлення"
+        "title": "Home - Оформлення замовлення",
+        "order": True
         }
     
     return render(request, "orders/create_order.html", context=context)

@@ -2,12 +2,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-
-
 def index(request):
     context = {
-        'title': 'SNEAKER - Головна',
-        'content': 'Головна сторінка мого сайту - SNEAKER',
+        'title': 'Home - Головна',
+        'content': 'Головна сторінка мого сайту - Home',
     }
 
     return render(request, 'main/index.html', context)
@@ -15,7 +13,7 @@ def index(request):
 def about(request):
     context = {
         'title': 'Home - Про нас',
-        'content': 'Про мій сайт - SNEAKER',
-        'text_on_page': "Мій сайт такий крутий, ну дуже крутий"
+        'content': 'Про мій сайт - Home',
+        'text_on_page': "Мій інтернет-магазин меблів розроблений за допомогою Django"
     }
     return render(request, 'main/about.html', context)
